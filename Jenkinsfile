@@ -11,7 +11,7 @@ pipeline {
 
         stage('Test') {
           steps {
-            sh 'echo "Test a job"'
+            pwd(tmp: true)
           }
         }
 
